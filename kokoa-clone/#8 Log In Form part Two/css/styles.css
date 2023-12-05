@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import "reset.css";
+@import "variables.css";
+@import "status-bar.css";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.7;
+}
+
+#login-form {
+ display: flex;
+ flex-direction: column;
+ margin: 0px 30px;
+ font-weight: 600;   
+}
+
+#login-form input {
+    border: none;
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* not이라는 속성을 알아보자.
+뭔가가 적용되는 것을 원하지 않을 떄 사용한다. */
+
+#login-form input:not([type="submit"]){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+    border-color: var(--yellow);
+}
+
+/* 아래는 특정 타입만 적용하는 예시임 */
+
+#login-form input[type="submit"] {
+    background-color: var(--yellow);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+/* inherit이란 속성 상속을 의미함
+기본 설정은 검정색임 */
+
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+}

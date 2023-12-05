@@ -1,0 +1,45 @@
+<!-- 아이콘을 추가하는데에는 2가지 옵션이 있음
+
+1. 직접 추가(svg 파일: 벡터 형식)
+
+1.1. heroicons 사용(무료)
+
+하지만, 무료라서 없을 때도 있음 이럴 떄에는
+
+1.2. FontAwesome을 사용하면 됨 -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Talk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+<!-- FontAwesome 사용한 거 -->
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full"></i>
+            <i class="fa-solid fa-bolt"></i>
+            <!-- heroicons 복사한 거 -->
+                <!-- <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 10.5h.375c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H21M4.5 10.5h6.75V15H4.5v-4.5zM3.75 18h15A2.25 2.25 0 0021 15.75v-6a2.25 2.25 0 00-2.25-2.25h-15A2.25 2.25 0 001.5 9.75v6A2.25 2.25 0 003.75 18z"></path>
+                </svg> -->
+            
+            <!-- Lightning Icon -->
+        </div>
+    </div>
+<!-- FontAwesome 사용 부분 -->
+<!-- 스크립트는 항상 body를 닫기 전에 존재해야 함 -->
+    <script src="https://kit.fontawesome.com/2f0bc1a8ee.js" crossorigin="anonymous"></script>
+</body>
+</html>

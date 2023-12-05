@@ -1,0 +1,29 @@
+/* 리셋 css를 사용하면, 기본 마진 등을 없애준다. */
+/* 그리고 기존 파일은 복붙해서 새로 만들어준다. */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import "reset.css";
+@import "status-bar.css";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.7;
+}
