@@ -11,5 +11,9 @@
 }
 
 .screen-header__icons span {
-    margin-left: 25px;
+    margin-left: var(--horizontal-space);
+}
+
+.friends-screen {
+    padding: 0px var(--horizontal-space);
 }
