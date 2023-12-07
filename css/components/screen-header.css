@@ -12,9 +12,23 @@
 }
 
 .screen-header__icons span {
+    position: relative;
     margin-left: var(--horizontal-space);
 }
 
 .friends-screen {
     padding: 0px var(--horizontal-space);
+}
+
+.screen-header__ellipsis {
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
 }
